@@ -31,4 +31,4 @@ pkg> activate <.path/to/working/directory>
 pkg> instantiate
 ```
 
-In a similar way, you can use the `Project.toml` and `Manifest.toml` files in this project to set up the right environment for running all code. After activating the right environment, you can get started with the first notebook: [1-the-basics.ipynb](https://github.com/max-de-rooij/julia-ode-tutorial/blob/d3f9e86674ce46118cdf536ac63714f45bceb2f9/1-the-basics.ipynb).
+In a similar way, you can use the `Project.toml` and `Manifest.toml` files in this project to set up the right environment for running all code. After activating the right environment, you can get started with the first notebook: [1-the-basics.ipynb](1-the-basics.ipynb).
