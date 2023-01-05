@@ -15,18 +15,18 @@ julia> 1 + 2
 ### The Julia package manager (Pkg)
 Installing packages happens through `Pkg`, the julia package manager. This also includes functionality for environments. When opening Julia, we can instantiate the package manager by pressing "`]`". We can press backspace to return to the regular Julia REPL. After activating `Pkg`, you can install a package by typing `add <package name>`. The convenient plotting package `Plots.jl` can be installed using
 
-```julia
+```
 pkg> add Plots
 ```
 
 This will install the Plots library in the global environment. To create a new environment, use
 
-```julia
+```
 pkg> activate <.path/to/working/directory>
 ```
 
 Once this has been activated, you can add packages in a similar way. When you start adding packages, notice that a `Project.toml` file and sometimes a `Manifest.toml` file will be created. These files contain the project dependencies and allow others to easily set up an environment with the same project dependencies as yours using
-```julia
+```
 pkg> activate <.path/to/working/directory>
 pkg> instantiate
 ```
