@@ -31,4 +31,4 @@ pkg> activate <.path/to/working/directory>
 pkg> instantiate
 ```
 
-In a similar way, you can use the `Project.toml` and `Manifest.toml` files in this project to set up the right environment for running all code. After activating the right environment, you can get started with the first notebook: [1-the-basics.ipynb](1-the-basics.ipynb).
+In a similar way, you can use the `Project.toml` and `Manifest.toml` files in this project to set up the right environment for running all code. When starting Julia from the project directory, you can use `pkg> activate .` to activate the current working directory as a new environment. After activating the right environment for this tutorial, you can get started with [the first notebook](1-the-basics.ipynb).
