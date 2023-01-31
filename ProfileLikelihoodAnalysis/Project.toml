@@ -1,0 +1,14 @@
+name = "ProfileLikelihoodAnalysis"
+uuid = "39511702-9eb0-46d7-85ca-8fe9f617d6f2"
+authors = ["max-de-rooij <54850292+max-de-rooij@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+DataInterpolations = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
+DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+LineSearches = "d3d80556-e9d4-5f37-9878-2ab0fcc64255"
+Optimization = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
+OptimizationOptimJL = "36348300-93cb-4f02-beb5-3c3902f8871e"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
