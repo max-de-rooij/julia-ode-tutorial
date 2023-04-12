@@ -79,7 +79,7 @@ function __pla(optf, calibrated_parameter_set, pla_parameter, loss_fnc, min_par,
 end
 
 
-solve(prob::PLAProblem, par_idx; min_par = :auto, max_par = :auto, threshold = :auto, lb = nothing, ub = nothing, 
+solve(prob::PLAProblem, par_idx; min_par = :auto, max_par = :auto, threshold = :auto, lb = :auto, ub = :auto, 
     min_par_step = :auto, max_par_step = :auto, min_obj_change = :auto, max_obj_change = :auto, sample_size = 100, hyperparameters=nothing) = begin
     
 
@@ -88,8 +88,8 @@ solve(prob::PLAProblem, par_idx; min_par = :auto, max_par = :auto, threshold = :
     max_par = max_par == :auto ? 10. .* prob.calibrated_parameters[par_idx] : max_par[par_idx]
 
     # Re-adjust the indices of the lower and upper bounds (choosing a subset without lb/ub of par_idx)
-    lb = lb[1:end .!= par_idx]
-    ub = ub[1:end .!= par_idx]
+    lb = (lb == :auto ? nothing : lb[1:end .!= par_idx])
+    ub = (ub == :auto ? nothing : ub[1:end .!= par_idx])
     
     
     # threshold
